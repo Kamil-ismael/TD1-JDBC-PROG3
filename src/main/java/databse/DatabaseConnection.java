@@ -8,7 +8,7 @@ public class DatabaseConnection {
     private final String user;
     private final String password;
 
-    public DatabaseConnection(String url, String user, String password, Connection conn) {
+    public DatabaseConnection(String url, String user, String password) {
         this.url = url;
         this.user = user;
         this.password = password;
