@@ -18,7 +18,7 @@ public class DataRetriever {
 
     public List<Category> getAllCategories() {
         List<Category> categories = new ArrayList<>();
-        String sql = "SELECT * FROM product_category";
+        String sql = "SELECT * FROM product_category ORDER BY name";
 
         try (Connection conn = dbConnection.getDBConnection();
             Statement stmt = conn.createStatement();
